@@ -1,11 +1,106 @@
+<!--Utilizar todas as tags explicadas nas aulas: <h1> até <h6>, <p>, <mark>, <small>, <i>, <u>, <strong>, <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>, <blockquote>;
+Utilizar novas tags sugeridas: <font>, <del>, <p>, <abbr> (a ideia é buscar estas tags na internet, entender como ela funciona e utilizar no texto).-->
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeira página</title>
+    <title>Informações sobre tags HTML</title>
+
 </head>
 <body>
-    
+    <h1> Informações sobre algumas tags HTML</h1>
+
+    <p> Essa página foi feita com o intuito de colocar em prática os conhecimentos adquiridos sobre tags html vistas em aula. Abaixo estão listadas algumas delas e um breve resumo sobre suas principais funções.</p>
+
+    <h2>Índice</h2>
+        <ul>
+            <li><a href="#titulos">Títulos (h1 a h6)</a></li>
+            <li><a href="#listas">Tags de listagem</a> </li>
+            <li><a href="#destaques">Destaques no texto</a></li>
+            <li><a href="#citacoes">Uso de citações</a></li>
+            <li><a href="#formatacao">Textos com formatação especial</a></li>
+            <li><a href="#separacao">Links e separação de conteúdo</a></li>
+            <li><a href="#outras">outras</a></li>
+        </ul>
+
+    <hr>
+
+    <h3 id="titulos"><mark>Títulos (h1 a h6)</mark> </h3>
+        <p>Os títulos em HTML são usados para <strong>estruturar</strong> o conteúdo de uma página e <strong>indicar a hierarquia</strong> das informações. Existem seis níveis de títulos, do h1 (mais importante) ao h6 (menos importante). </p>
+        
+        <h2><strong>Exemplos de uso:</strong></h2>
+            <ol>
+                <li><h1> Este é um exemplo de título h1</h1></li>
+                <li><h2>Este é um exemplo de título h2</h2></li>
+                <li><h3>Este é um exemplo de título h3</h3></li>
+                <li><h4>Este é um exemplo de título h4</h4></li>
+                <li><h5>Este é um exemplo de título h5</h5></li>
+                <li><h6>Este é um exemplo de título h6</h6></li>
+            </ol>
+
+    <hr>
+
+    <h3 id="listas"><mark>Tags de listagem</mark></h3>
+        <p>As listas em HTML são usadas para <strong>organizar informações de forma estruturada</strong>. Elas ajudam a exibir conteúdos de forma ordenada ou não ordenada, facilitando a leitura e a compreensão.</p>
+
+        <ul>
+        <li><strong>Listas não ordenadas "ul"</strong>: Utilizam marcadores (pontos, círculos, quadrados) para apresentar os itens sem uma sequência específica. Como no exemplo de uma lista de compras:
+        <ul>
+            <li>Arroz</li>
+            <li>Feijão</li>
+            <li>Óleo</li>
+        </ul>
+        </li>
+
+        <li><strong>Listas ordenadas "ol"</strong>: Os itens são numerados automaticamente, indicando uma ordem ou hierarquia. Exemplo:
+        <ol>
+            <li>Primeiro lugar</li>
+            <li>Segundo lugar</li>
+            <li>Terceiro lugar</li>
+         </ol>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3 id="destaques"><mark>Destaques no texto</mark></h3>
+            <p>Essas tags são utilizadas para dar destaque a partes do texto, como, por exemplo, deixar em negrito, itálico ou grifado.</p>
+            <p>Alguns exemplos são as tags "small" que exibe o texto em um tamanho menor <small>pequeno dessa maneira</small>. A tag "i" que deixa o texto em itálico <i>dessa forma</i>, a tag "u" que sublinha o texto <u>como nesse exemplo</u>, a tag "strong" que da ênfase ao texto, além de aumentar sua semântica, o deixando <strong>dessa maneira</strong>, e a tag "mark" que faz com que o texto fique grifado como nos subtitulos dessa página. </p>
+
+    <hr>
+
+    <h3 id="citacoes"><mark>Uso de citações</mark></h3>
+            <p>São usadas para evidenciar citações no texto, um exemplo é o "blockquote" que deixa a frase na linha seguinte, como no exemplo:</p> <blockquote>"A melhor maneira de prever o futuro é inventá-lo - Nikola Tesla".</blockquote> <blockquote>"Só sei, que nada sei" - Sócrates</blockquote>
+
+    <hr>
+
+    <h3 id="formatacao"><mark>Textos com formatação especial</mark></h3>
+            <p>Dois exemplos são as tags "sub" e "sup" usadas para sobrescrever e subscrever, respectivamente. São muito úteis em fórmulas matemáticas. Exemplos:</p>
+            <p> x<sup>2</sup>+4=8</p>
+            <p> 7<sub>x</sub>+y=21</p>
+
+    <hr>
+
+    <h3 id="separacao"><mark>Links e separação de conteúdo</mark></h3>
+            <p>São usadas para organizar a maneira de separar os conteúdos da página, como por exemplo a tag "hr" que cria uma linha horizontal entre os tópicos, como usado nessa página, e também a tag "a" que cria um link com uma referência para algum lugar predefinido, também usada no índice dessa página. </p>
+
+    <hr>
+
+    <h3 id="outras"><mark>Outras</mark></h3>
+            <p>Seção para exemplificar algumas tags extras como, por exemplo: "font", "del" e "abbr".</p>
+
+            <p> A tag <u>font</u> é usada para estilizar o texto, usando os atributos cor, tamanho e fonte, o deixando como nesse exemplo: <font color="red" size="3" face="arial">Este texto está em vermelho, tamanho 3 e fonte Arial, totalmente estilizado pela tag "font".</font></p>
+            <p> Essa estilização também pode ser feita usando css.</p>
+
+            <p> A tag <u>"del"</u> indica que um texto foi excluído ou que não é mais válido, ficando rasurado. Exemplo: </p>
+            <p><strong>Promoção!</strong> O preço original era <del>R$ 100,00</del>, mas agora está por R$ 80,00!</p>
+
+            <p>A tag <u>"abbr"</u> tem a função de definir abreviações ou siglas, exibindo um texto explicativo quando o usuário passa o mouse sobre ela. Exemplo: </p>
+            <p>- "A <abbr title="Organização das Nações Unidas">ONU</abbr> foi fundada em 1945".</p>
+            <p>Dessa maneira, quando o usuário passa o mouse sobre a palavra "ONU", aparece a explicação.</p>
+
 </body>
 </html>
